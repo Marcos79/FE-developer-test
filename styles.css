@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+* {
+    font-family: 'Open Sans';
+}
+
+@media screen and (max-width: 480px){
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      display:inline-block;
+      align-items: center;
+    }
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#233950;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+    html {
+      font-size: 20px;
+      font-family: 'Open Sans'; 
+      font-weight: 300;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: #f5f3ee62;
+      color: #233950;
+      min-height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+ 
+    main section {
+      padding: 1rem 2rem;
+    }
+    p {
+      color: #233950;
+      padding: 0;
+      font-size: 1.2rem;
+      margin: 4rem 0;
+      clear: both;
+    }
+    p img {
+      float: left;
+      margin: 0.5rem 1rem 1rem 0;
+      max-width: 100%;
+    }
+    
+    
+    #more {
+      display: none;
+    }
+    #button{
+     font-size: medium;
+     border-radius: 15%;
+      font-size-adjust: inherit;
+      color: #233950;
+      background-color:#cc9933;
+      box-shadow: hsl(213, 30%, 10%);
+    }
+    
+    img {
+      max-width: 100%;
+      object-fit:cover;
+      object-position: center;
+    }
